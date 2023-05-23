@@ -1,0 +1,38 @@
+<nav class="navbar navbar-inverse mt-3">
+  <div class="container-fluid">
+    <div class="navbar-header ">
+      
+    
+    <div class="collapse navbar-collapse m-0" id="myNavbar">
+      <ul class="nav navbar-nav">
+        
+        <li><a href="/home">HOME</a></li>
+        <li><a href="/tablepage">Table</a></li>
+        <li><a href="/cardpage">cards</a></li>
+        <li><a href="/listpage">List</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right"style="justify-content: right; align-items: right">
+        <li><a href="/logout"><span class="glyphicon glyphicon-log-in"></span> Log out</a></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+</nav>
+
+<div class="row container w-100 d-flex justify-content-around "style="margin-right:0;
+    margin-left:16rem;margin-top:5rem">
+  {{#each cardData}}
+  <div class="col-12 col-md-6 col-lg-4  ">
+  <div class="card" style="width: 30rem; mt-5 d-flex justify-content-around">
+    <div class=" w-20rem h-30rem">
+<img style="width: 100%;" class="card-img-top w-100%" src={{this.img}} alt="Card image cap">
+  </div>
+  
+  <div class="card-body">
+    <h2 class="card-text text-dark">{{this.head}}</h2>
+    <p class="card-text text-danger">{{this.text}}</p>
+  </div>
+</div>
+</div>
+  {{/each}}
+</div>

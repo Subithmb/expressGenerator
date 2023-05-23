@@ -1,0 +1,46 @@
+<nav class="navbar navbar-inverse mt-3">
+  <div class="container-fluid">
+    <div class="navbar-header ">
+      
+    
+    <div class="collapse navbar-collapse m-0" id="myNavbar">
+      <ul class="nav navbar-nav">
+        
+        <li><a href="/home">HOME</a></li>
+        <li><a href="/tablepage">Table</a></li>
+        <li><a href="/cardpage">cards</a></li>
+        <li><a href="/listpage">List</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right"style="justify-content: right; align-items: right">
+        <li><a href="/logout"><span class="glyphicon glyphicon-log-in"></span> Log out</a></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+</nav>
+<div class="row container w-100 d-flex justify-content-around "style="margin-right:0;
+    margin-left:16rem;margin-top: 10vh; text-danger">
+  
+<table class="table text-danger">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">NO</th>
+      <th scope="col">NAME</th>
+      <th scope="col">PHONE</th>
+    </tr>
+  </thead>
+  
+  <tbody class="text-danger">
+    {{#each table}}
+    <tr>
+      <th scope="row">{{no}}</th>
+      <td>{{name}}</td>
+      <td>{{num}}</td>
+    </tr>
+     {{/each}}
+  </tbody>
+
+
+ 
+  </table>
+</div>
